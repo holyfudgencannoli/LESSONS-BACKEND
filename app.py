@@ -16,7 +16,7 @@ load_dotenv()
 # --- Flask app setup ---
 app = Flask(__name__)
 app.config.from_object(Config)
-CORS(app, resources={r"/api/*": {"origins": ["http://localhost:5173"]}}, supports_credentials=True)
+CORS(app, resources={r"/api/*": {"origins": ["https://awesome-guitar-lessons.pages.dev"]}}, supports_credentials=True)
 
 # --- Validate environment ---
 for key in [
@@ -130,3 +130,4 @@ def register_lesson():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
