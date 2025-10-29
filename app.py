@@ -4,8 +4,7 @@ from config import Config
 from sqlalchemy import Column, Integer, String, Boolean, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 from datetime import datetime
-from dotenv import load_dotenv
-import boto3
+ import boto3
 from werkzeug.utils import secure_filename
 import os
 import uuid
@@ -127,5 +126,6 @@ def register_lesson():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
 
