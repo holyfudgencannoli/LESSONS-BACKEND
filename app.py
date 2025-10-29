@@ -10,9 +10,6 @@ from werkzeug.utils import secure_filename
 import os
 import uuid
 
-# --- Load .env ---
-load_dotenv()
-
 # --- Flask app setup ---
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -130,4 +127,5 @@ def register_lesson():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
